@@ -50,7 +50,6 @@ class SignInScreen extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30), color: Colors.white),
               child: TextField(
-                keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                   suffixIcon: Container(
                     margin: EdgeInsets.only(right: 20.0),
@@ -70,35 +69,6 @@ class SignInScreen extends StatelessWidget {
                   ),
                   label: Text(
                     'Password',
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30), color: Colors.white),
-              child: TextField(
-                keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(
-                  suffixIcon: Container(
-                    margin: EdgeInsets.only(right: 20.0),
-                    child: Icon(Icons.remove_red_eye),
-                  ),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide(color: Color(0xfff1f1fb)),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide(color: Color(0xfff1f1fb)),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide(color: Color(0xff1252F7)),
-                  ),
-                  label: Text(
-                    'Confirm Password',
                   ),
                 ),
               ),
