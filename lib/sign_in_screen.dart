@@ -110,10 +110,8 @@ class SignUpScreen extends StatelessWidget {
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(30)),
               child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: ));
-                },
-                child: Text('SIGN UP'),
+                onPressed: () {},
+                child: Text('SIGN IN'),
                 style: TextButton.styleFrom(
                     backgroundColor: Color(0xff1252F7),
                     shape: RoundedRectangleBorder(
