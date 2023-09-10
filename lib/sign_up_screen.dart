@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:project_40/sign_in_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screnHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xff1252F7),
@@ -110,9 +113,7 @@ class SignUpScreen extends StatelessWidget {
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(30)),
               child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: ));
-                },
+                onPressed: () {},
                 child: Text('SIGN UP'),
                 style: TextButton.styleFrom(
                     backgroundColor: Color(0xff1252F7),
@@ -120,6 +121,30 @@ class SignUpScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(30))),
               ),
             ),
+            Container(
+              child: Row(
+                children: [
+                  Container(
+                    padding: EdgeInsets.only(left: 20),
+                    child: Text('already have an account?'),
+                  ),
+                  Container(
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return SignInScreen();
+                              },
+                            ),
+                          );
+                        },
+                        child: Text('Sign in')),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
